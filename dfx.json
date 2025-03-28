@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "ticket_chad_backend": {
+      "candid": "src/ticket_chad_backend/ticket_chad_backend.did",
+      "package": "ticket_chad_backend",
+      "type": "rust"
+    },
+    "ticket_chad_frontend": {
+      "dependencies": [
+        "ticket_chad_backend"
+      ],
+      "source": [
+        "src/ticket_chad_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ticket_chad_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

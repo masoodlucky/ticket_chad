@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/ticket_chad_backend"
+]
+resolver = "2"
