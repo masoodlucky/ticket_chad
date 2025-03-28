@@ -10,12 +10,9 @@
         "ticket_chad_backend"
       ],
       "frontend": {
-        "entrypoint": "src/ticket_chad_frontend/index.html"
+        "entrypoint": "src/ticket_chad_frontend/assets/index.html"
       },
-      "source": [
-        "src/ticket_chad_frontend/assets",
-        "dist/ticket_chad_frontend/"
-      ],
+      "source": ["src/ticket_chad_frontend/assets"],
       "type": "assets"
     }
   },
