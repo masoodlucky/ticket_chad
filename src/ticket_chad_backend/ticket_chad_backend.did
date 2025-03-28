@@ -1,3 +1,14 @@
+type Ticket = record {
+  event_name: text;
+  owner: text;
+  price: nat64;
+  is_sold: bool;
+  seat_number: text;
+};
+
 service : {
-    "greet": (text) -> (text) query;
+  "create_ticket": (text, text, nat64, text) -> (nat64);
+  "buy_ticket": (nat64, text) -> (bool);
+  "resell_ticket": (nat64, text, nat64) -> (bool);
+  "get_ticket": (nat64) -> (opt Ticket) query;
 }

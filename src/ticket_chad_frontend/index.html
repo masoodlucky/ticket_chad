@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>IC Hello Starter</title>
-  <base href="/" />
-  <link rel="icon" href="/favicon.ico" />
+    <title>TicketChad - NFT Ticketing System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TicketChad - NFT-based ticketing system on ICP to prevent fraud and scalping">
 </head>
-
 <body>
-  <div class="browser-warning">
-    ⚠️ If this page appears broken, try reloading. If the problem persists, try switching browsers; Chrome or
-    Firefox are recommended.
-  </div>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <div class="container">
+        <h1>TicketChad</h1>
+        <p class="subtitle">NFT-based Ticketing System on Internet Computer</p>
+        
+        <div class="actions">
+            <button onclick="createTicket()">Mint Ticket</button>
+            <button onclick="buyTicket()">Buy Ticket</button>
+            <button onclick="resellTicket()">Resell Ticket</button>
+            <button onclick="getTicketInfo()">Get Ticket Info</button>
+        </div>
+        
+        <div id="result"></div>
+    </div>
+    
+    <script src="index.js"></script>
 </body>
-
 </html>
