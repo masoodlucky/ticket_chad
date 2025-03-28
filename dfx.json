@@ -9,11 +9,14 @@
       "dependencies": [
         "ticket_chad_backend"
       ],
+      "frontend": {
+        "entrypoint": "src/ticket_chad_frontend/index.html"
+      },
       "source": [
-        "src/ticket_chad_frontend/dist"
+        "src/ticket_chad_frontend/assets",
+        "dist/ticket_chad_frontend/"
       ],
-      "type": "assets",
-      "workspace": "ticket_chad_frontend"
+      "type": "assets"
     }
   },
   "defaults": {
